@@ -71,7 +71,7 @@ struct AnimatedCell: View {
                 // response: 响应时间，值越大动画越慢
                 // dampingFraction: 阻尼系数，控制弹簧效果，值越小弹性越大
                 // blendDuration: 混合持续时间，用于多个动画之间的过渡
-                withAnimation(.spring(response: 0.8, dampingFraction: 0.8, blendDuration: 0)) {
+                withAnimation(.spring(response: 0.8, dampingFraction: 6.8, blendDuration: 0)) {
                     animate = true
                 }
             }
