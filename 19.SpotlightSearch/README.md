@@ -1,4 +1,4 @@
-SwiftUI 本身尚未直接支持配置这些快捷操作, 所以需要与 uikit 集成完成该项目，这个项目里有 swiftUI 和 UIKit 如何桥接的逻辑。
+# _9_SpotlightSearchApp
 
 需要在 info.plist 里添加以下配置：
 <key>NSCoreSpotlightUsageDescription</key>
@@ -9,3 +9,10 @@ SwiftUI 本身尚未直接支持配置这些快捷操作, 所以需要与 uikit 
 2. 返回主屏幕，下拉打开 Spotlight 搜索
 3. 尝试搜索 "SwiftUI"、"Core Data" 或 "Combine"
 4. 点击搜索结果即可跳转到应用对应内容
+
+
+# _9_SpotlightSearchAppDemo02
+
+使用 SwiftUI 的现代应用生命周期（无需 AppDelegate）
+
+要测试第二个 demo，可以将第一个 demo 中的@main 这行注释掉
