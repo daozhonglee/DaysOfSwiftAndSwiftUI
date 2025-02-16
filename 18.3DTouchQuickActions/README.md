@@ -1,1 +1,1 @@
-这个项目里有 swiftUI 和 UIKit 如何桥接的逻辑
+SwiftUI 本身尚未直接支持配置这些快捷操作, 所以需要与 uikit 集成完成该项目，这个项目里有 swiftUI 和 UIKit 如何桥接的逻辑。
