@@ -12,11 +12,13 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    // 在 Core Data 中，  viewContext   是一个   NSManagedObjectContext   的实例，用于管理对象的生命周期和数据的持久化。当你通过   viewContext   创建、修改或删除数据时，这些更改需要被保存到持久化存储中（如 SQLite 数据库）。
     // 通过环境变量获取托管对象上下文
     // 用于执行数据库操作
     @Environment(\.managedObjectContext) private var viewContext
 
     // 使用@FetchRequest从CoreData获取数据
+    // @FetchRequest   是 SwiftUI 提供的一个属性包装器，用于从 Core Data 中自动获取和管理数据。它允许 SwiftUI 视图直接与 Core Data 的数据模型交互，并且能够响应数据的变化，从而实现数据的动态更新和展示。
     // sortDescriptors定义数据排序方式
     // animation指定数据变化时的动画效果
     @FetchRequest(
