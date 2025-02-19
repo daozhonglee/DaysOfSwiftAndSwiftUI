@@ -119,7 +119,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 // MARK: - 入口
 // @main标记此结构体为应用程序的入口点
-//@main
+@main
 // SpotlightDemoApp：应用程序主结构体
 // 遵循App协议，定义应用程序的根级结构
 struct SpotlightDemoApp: App {

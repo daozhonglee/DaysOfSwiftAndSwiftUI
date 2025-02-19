@@ -1,6 +1,6 @@
 //
-//  TestWidgetApp.swift
-//  TestWidget Watch App
+//  _4_WatchAppGuessApp.swift
+//  24.WatchAppGuess Watch App
 //
 //  Created by shanquan on 2025/2/19.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TestWidget_Watch_AppApp: App {
+struct _4_WatchAppGuess_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
