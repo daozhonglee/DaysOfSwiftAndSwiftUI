@@ -7,14 +7,27 @@
 
 import SwiftUI
 
+/// Twitter风格的启动页面动画效果
+/// 本示例展示了如何使用SwiftUI实现一个类似Twitter的启动页面过渡动画
+/// 主要技术点包括：
+/// - 使用@State管理视图状态和动画
+/// - ZStack实现视图层叠布局
+/// - SwiftUI动画和过渡效果
+/// - 异步延时执行动画序列
 struct ContentView: View {
-    // 控制 logo 的缩放和透明度动画
-        @State private var logoScale: CGFloat = 1.0
-        @State private var logoOpacity: Double = 1.0
-        // 控制是否显示主视图
-        @State private var showMainView = false
+    /// 控制logo缩放比例的状态变量
+    /// 初始值为1.0，动画过程中会增加到1.5
+    @State private var logoScale: CGFloat = 1.0
+    
+    /// 控制logo透明度的状态变量
+    /// 初始值为1.0（完全不透明），动画过程中会降低到0（完全透明）
+    @State private var logoOpacity: Double = 1.0
+    
+    /// 控制是否显示主视图的状态变量
+    /// 当启动动画完成后，此值变为true，触发主视图的显示
+    @State private var showMainView = false
 
-        var body: some View {
+    var body: some View {
             ZStack {
                 // 主内容视图，当动画结束后显示
                 //
